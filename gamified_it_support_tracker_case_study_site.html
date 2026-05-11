@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamified IT Support Tracker - Case Study</title>
+
+    <style>
+          * {
+            margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+          body {
+            font-family: Arial, Helvetica, sans-serif;
+          background: #ffffff;
+          color: #111827;
+          line-height: 1.7;
+          padding: 40px;
+      }
+
+          .container {
+            max-width: 1200px;
+          margin: auto;
+      }
+
+          .hero {
+            border-bottom: 1px solid #e5e7eb;
+          padding-bottom: 40px;
+          margin-bottom: 60px;
+      }
+
+          .hero small {
+            color: #6b7280;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          display: block;
+          margin-bottom: 20px;
+      }
+
+          .hero h1 {
+            font-size: 56px;
+          font-weight: 600;
+          margin-bottom: 20px;
+      }
+
+          .hero p {
+            max-width: 850px;
+          color: #4b5563;
+          font-size: 18px;
+      }
+
+          .grid-3 {
+            display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 20px;
+          margin-bottom: 70px;
+      }
+
+          .card {
+            background: #f9fafb;
+          border: 1px solid #e5e7eb;
+          border-radius: 20px;
+          padding: 30px;
+      }
+
+          .card small {
+            display: block;
+          margin-bottom: 10px;
+          color: #6b7280;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+      }
+
+          .card h3 {
+            font-size: 28px;
+          font-weight: 500;
+      }
+
+          section {
+            margin-bottom: 80px;
+      }
+
+          section h2 {
+            font-size: 40px;
+          margin-bottom: 30px;
+          font-weight: 600;
+      }
+
+          .two-column {
+            display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+          gap: 40px;
+          align-items: start;
+      }
+
+          .content-box {
+            background: #f9fafb;
+          border: 1px solid #e5e7eb;
+          border-radius: 20px;
+          padding: 35px;
+      }
+
+          .content-box h3 {
+            margin-bottom: 20px;
+          font-size: 24px;
+      }
+
+          .content-box ul {
+            list-style: none;
+      }
+
+          .content-box li {
+            padding: 12px 0;
+          border-bottom: 1px solid #e5e7eb;
+      }
+
+          .content-box li:last-child {
+            border-bottom: none;
+      }
+
+          .architecture-grid {
+            display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 20px;
+      }
+
+          .architecture-step {
+            border: 1px solid #e5e7eb;
+          border-radius: 20px;
+          padding: 30px;
+      }
+
+          .architecture-step .number {
+            font-size: 50px;
+          margin-bottom: 20px;
+          color: #9ca3af;
+      }
+
+          .architecture-step h3 {
+            font-size: 24px;
+          margin-bottom: 15px;
+      }
+
+          pre {
+            font-family: Consolas, monospace;
+          background: #f3f4f6;
+          border: 1px solid #d1d5db;
+          padding: 30px;
+          border-radius: 20px;
+          overflow-x: auto;
+          font-size: 14px;
+          line-height: 1.8;
+          color: #111827;
+          white-space: pre-wrap;
+      }
+
+          table {
+            width: 100%;
+          border-collapse: collapse;
+          margin-top: 20px;
+      }
+
+          table th,
+          table td {
+            border-bottom: 1px solid #e5e7eb;
+          padding: 18px;
+          text-align: left;
+      }
+
+          table th {
+            color: #6b7280;
+          font-weight: 600;
+      }
+
+          footer {
+            border-top: 1px solid #e5e7eb;
+          padding-top: 30px;
+          color: #6b7280;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 10px;
+      }
+
+          @media (max-width: 768px) {
+            body {
+            padding: 20px;
+        }
+
+          .hero h1 {
+            font-size: 40px;
+        }
+
+          section h2 {
+            font-size: 32px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="hero">
+        <small>ServiceNow Case Study</small>
+        <h1>Gamified IT Support Tracker</h1>
+        <p>
+          A ServiceNow application for incident-based point allocation, SLA
+          tracking, reward automation, and agent performance visibility.
+        </p>
+      </header>
+
+      <div class="grid-3">
+        <div class="card">
+          <small>Platform</small>
+          <h3>ServiceNow</h3>
+        </div>
+
+        <div class="card">
+          <small>Module</small>
+          <h3>Incident Management</h3>
+        </div>
+
+        <div class="card">
+          <small>Focus</small>
+          <h3>Gamification Workflow</h3>
+        </div>
+      </div>
+
+      <section>
+        <div class="two-column">
+          <div>
+            <h2>Abstract</h2>
+            <p>
+              The Gamified IT Support Tracker is a custom ServiceNow application
+              designed to enhance IT support operations through
+              gamification-based incident tracking. The system awards points to
+              support agents according to incident priority and SLA compliance.
+            </p>
+
+            <br />
+
+            <p>
+              The application uses Business Rules, GlideRecord scripting,
+              scratchpad data loading, and dashboards to automate rewards and
+              display badge-based performance metrics.
+            </p>
+          </div>
+
+          <div class="content-box">
+            <h3>Badge Levels</h3>
+            <ul>
+              <li>Bronze — 0 to 99 Points</li>
+              <li>Silver — 100 to 199 Points</li>
+              <li>Gold — 200 to 299 Points</li>
+              <li>Platinum — 300+ Points</li>
+            </ul>
+
+            <br /><br />
+
+            <h3>Priority-Based Points</h3>
+            <ul>
+              <li>Priority 1 — 50 Points</li>
+              <li>Priority 2 — 35 Points</li>
+              <li>Priority 3 — 20 Points</li>
+              <li>Priority 4 — 10 Points</li>
+              <li>Priority 5 — 5 Points</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Architecture Overview</h2>
+
+        <div class="architecture-grid">
+          <div class="architecture-step">
+            <div class="number">1</div>
+            <h3>Incident Closure</h3>
+            <p>Incident state changes to Closed.</p>
+          </div>
+
+          <div class="architecture-step">
+            <div class="number">2</div>
+            <h3>Reward Calculation</h3>
+            <p>Business Rules evaluate priority and SLA status.</p>
+          </div>
+
+          <div class="architecture-step">
+            <div class="number">3</div>
+            <h3>Reward Storage</h3>
+            <p>Points and badge values are stored in custom tables.</p>
+          </div>
+
+          <div class="architecture-step">
+            <div class="number">4</div>
+            <h3>UI Feedback</h3>
+            <p>Badge and score details are displayed on the Incident form.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Business Rule — Award Points on Incident Closure</h2>
+
+        <pre><code>(function executeRule(current, previous) {
+
+  if (!(current.state.changesTo('7') && !current.u_points_awarded))
+            return;
+
+            if (!current.assigned_to)
+            return;
+
+            var pointsMap = {
+              '1': 50,
+            '2': 35,
+            '3': 20,
+            '4': 10,
+            '5': 5
+  };
+
+            var points = pointsMap[String(current.priority)] || 0;
+
+            var slaBonus = 0;
+
+            var ts = new GlideRecord('task_sla');
+            ts.addQuery('task', current.sys_id);
+            ts.addQuery('stage', 'completed');
+            ts.addQuery('has_breached', false);
+            ts.query();
+
+            if (ts.next())
+            slaBonus = 10;
+
+            var total = points + slaBonus;
+
+            var gr = new GlideRecord('u_agent_rewards');
+            gr.addQuery('u_agent', current.assigned_to);
+            gr.query();
+
+            if (gr.next()) {
+    var newTotal = (parseInt(gr.u_points, 10) || 0) + total;
+
+            gr.u_points = newTotal;
+            gr.u_badge = getBadge(newTotal);
+            gr.update();
+  } else {
+              gr.initialize();
+            gr.u_agent = current.assigned_to;
+            gr.u_points = total;
+            gr.u_badge = getBadge(total);
+            gr.insert();
+  }
+
+            current.u_points_awarded = true;
+            current.update();
+
+            function getBadge(score) {
+    if (score >= 300)
+            return 'Platinum';
+
+    if (score >= 200)
+            return 'Gold';
+
+    if (score >= 100)
+            return 'Silver';
+
+            return 'Bronze';
+  }
+})(current, previous);</code></pre>
+      </section>
+
+      <section>
+        <h2>Business Rule — Load Rewards to Scratchpad</h2>
+
+        <pre><code>(function executeRule(current, g_scratchpad) {
+
+            g_scratchpad.badge = '';
+            g_scratchpad.points = 0;
+
+            if (!current.assigned_to)
+            return;
+
+            var r = new GlideRecord('u_agent_rewards');
+            r.addQuery('agent', current.assigned_to);
+            r.setLimit(1);
+            r.query();
+
+            if (r.next()) {
+              g_scratchpad.badge = r.badge + '';
+            g_scratchpad.points = parseInt(r.points, 10) || 0;
+  }
+})(current, g_scratchpad);</code></pre>
+      </section>
+
+      <section>
+        <h2>Client Script — Display Badge Information</h2>
+
+        <pre><code>function onLoad() {
+
+  if (g_scratchpad.badge) {
+
+              g_form.addInfoMessage(
+                'Agent Badge: ' + g_scratchpad.badge +
+                ' | Points: ' + g_scratchpad.points
+              );
+  }
+}</code></pre>
+      </section>
+
+      <section>
+        <div class="two-column">
+          <div class="content-box">
+            <h3>Core Components</h3>
+
+            <ul>
+              <li>Incident Management Table</li>
+              <li>Custom Rewards Table</li>
+              <li>Business Rules</li>
+              <li>GlideRecord Operations</li>
+              <li>SLA Evaluation Logic</li>
+              <li>Client Scripts</li>
+              <li>Dashboard Reporting</li>
+              <li>Badge Assignment Engine</li>
+            </ul>
+          </div>
+
+          <div class="content-box">
+            <h3>System Outcomes</h3>
+
+            <ul>
+              <li>Automated reward distribution</li>
+              <li>SLA-based scoring</li>
+              <li>Incident priority evaluation</li>
+              <li>Badge progression tracking</li>
+              <li>Agent performance visibility</li>
+              <li>Leaderboard integration</li>
+              <li>Form-level performance insights</li>
+              <li>Reduced manual tracking processes</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Database Structure</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Table</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>incident</td>
+              <td>Stores incident records and assignment data</td>
+            </tr>
+
+            <tr>
+              <td>task_sla</td>
+              <td>Tracks SLA completion and breach status</td>
+            </tr>
+
+            <tr>
+              <td>u_agent_rewards</td>
+              <td>Stores agent points and badge levels</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <footer>
+        <p>Gamified IT Support Tracker — ServiceNow Case Study</p>
+        <p>Business Rules • Incident Management • SLA Tracking</p>
+      </footer>
+    </div>
+  </body>
+</html>
